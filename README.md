@@ -68,6 +68,38 @@ The following platforms are supported:
 5. Look at [contribution guide](docs/contributing.md) to start your contribution.
 6. Look at [eSpeak NG roadmap](https://github.com/espeak-ng/espeak-ng/wiki/eSpeak-NG-roadmap) to participate in development of eSpeak NG.
 
+## Getting Started
+This section will walk you through the steps to quickly install and use eSpeak NG
+
+### 1. Installation 
+- **Linux** (Debian/Ubuntu):
+  ```bash
+  sudo apt-get install espeak-ng
+- **MacOS** (Via Homebrew):
+  ```bash
+  brew install espeak-ng
+- **Windows:** Download the latest version from [eSpeak NG Releases](https://github.com/espeak-ng/espeak-ng/releases)
+
+### 2. Testing Installation
+After installing, you can test that eSpeak is workinh by running the following command to convert text to speech:
+  ```bash
+  espeak-ng "Hello, welcome to eSpeak NG!"
+```
+
+### 3. Basic Usage
+• Convert Text to Speech:
+  ```bash
+  espeak-ng "This is an example of text to speech."
+```
+• Save the speech output to a WAV file:
+```bash
+  espeak-ng -w output.wav "Saving this text as a WAV file."
+```
+• Speak in a language and accent:
+```bash
+  espeak-ng -v en-gb "Speaking in English with a British accent."
+```
+
 ## eSpeak Compatibility
 
 The *espeak-ng* binaries use the same command-line options as *espeak*, with
